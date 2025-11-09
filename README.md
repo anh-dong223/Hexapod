@@ -6,13 +6,35 @@ Real-time object detection system for robot cameras using NVIDIA NanoOWL on Jets
 
 This project integrates NVIDIA's NanoOWL model for open-vocabulary object detection with robot camera systems. It provides a Python API for real-time detection that can be easily integrated into robot control systems.
 
+## ⚠️ IMPORTANT: Jetson-Only Installation
+
+**This project MUST be installed and run on an NVIDIA Jetson device (Jetson Nano Orin).**
+
+It cannot be installed on:
+- ❌ Mac/Windows/Linux desktop computers
+- ❌ x86_64 systems
+- ❌ Cloud instances without Jetson hardware
+
+**Why?** NanoOWL requires:
+- NVIDIA TensorRT (Jetson-specific)
+- Jetson-optimized PyTorch builds
+- CUDA support (Jetson GPU)
+
+### Development Workflow
+
+If you're developing on a Mac/PC:
+1. **Edit code locally** on your Mac/PC
+2. **Push to GitHub** 
+3. **Clone on Jetson** and run there
+4. Or use **SSH** to connect to Jetson from your Mac
+
 ## Prerequisites
 
 ### Hardware
-- NVIDIA Jetson Nano Orin
+- **NVIDIA Jetson Nano Orin** (required)
 - USB camera or CSI camera module
 
-### Software Setup
+### Software Setup (ON JETSON DEVICE)
 
 1. **Install JetPack** (if not already installed)
    - Ensure you have JetPack 5.x installed on your Jetson Nano Orin

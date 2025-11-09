@@ -2,11 +2,20 @@
 
 Get your robot camera detector running in minutes!
 
+## ⚠️ IMPORTANT: Run This on Jetson Device
+
+**This setup MUST be done on your NVIDIA Jetson Nano Orin, NOT on a Mac/PC.**
+
+The installation will fail on Mac/Windows because:
+- TensorRT is Jetson-specific
+- PyTorch needs Jetson builds
+- CUDA requires NVIDIA GPU hardware
+
 ## Prerequisites Check
 
 1. **Jetson Nano Orin** with JetPack installed
 2. **Camera** connected (USB or CSI)
-3. **nanoowl** installed (see below)
+3. **SSH access** to Jetson (if developing on Mac/PC)
 
 ## Step 1: Install NanoOWL
 

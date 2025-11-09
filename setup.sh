@@ -9,12 +9,27 @@ echo "========================================="
 
 # Check if running on Jetson
 if [ ! -f /etc/nv_tegra_release ]; then
-    echo "Warning: This script is designed for NVIDIA Jetson devices"
-    echo "Continue anyway? (y/n)"
-    read -r response
-    if [ "$response" != "y" ]; then
-        exit 1
-    fi
+    echo "========================================="
+    echo "ERROR: This script MUST be run on NVIDIA Jetson device"
+    echo "========================================="
+    echo ""
+    echo "NanoOWL requires:"
+    echo "  - NVIDIA TensorRT (only available on Jetson devices)"
+    echo "  - Jetson-specific PyTorch builds"
+    echo "  - CUDA support"
+    echo ""
+    echo "This cannot be installed on Mac/Windows/Linux desktop systems."
+    echo ""
+    echo "Please:"
+    echo "  1. Clone this repository on your Jetson Nano Orin"
+    echo "  2. Run this setup script on the Jetson device"
+    echo ""
+    echo "For development on Mac, you can:"
+    echo "  - Edit code locally and push to GitHub"
+    echo "  - Clone and test on Jetson"
+    echo "  - Use SSH to connect to Jetson from Mac"
+    echo ""
+    exit 1
 fi
 
 # Check Python version
