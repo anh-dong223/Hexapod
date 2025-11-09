@@ -48,8 +48,15 @@ This project integrates NVIDIA's NanoOWL model for open-vocabulary object detect
 
 1. **Clone or download this repository**
    ```bash
-   cd ~/robott
+   git clone https://github.com/anh-dong223/Hexapod.git
+   cd Hexapod
    ```
+
+2. **Verify Setup** (Optional but recommended)
+   ```bash
+   python3 verify_setup.py
+   ```
+   This will check if all dependencies are installed and configured correctly.
 
 2. **Build the TensorRT engine** (if not already done in nanoowl setup)
    ```bash

@@ -27,14 +27,18 @@ python3 -m nanoowl.build_image_encoder_engine data/owl_image_encoder_patch32.eng
 ## Step 2: Setup This Project
 
 ```bash
-# Navigate to project directory
-cd ~/robott
+# Clone the repository (if not already done)
+git clone https://github.com/anh-dong223/Hexapod.git
+cd Hexapod
 
 # Run setup script
 ./setup.sh
 
 # Or manually install dependencies
 pip3 install -r requirements.txt
+
+# Verify setup (recommended)
+python3 verify_setup.py
 ```
 
 ## Step 3: Configure Detection Targets
