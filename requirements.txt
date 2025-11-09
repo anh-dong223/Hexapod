@@ -1,0 +1,20 @@
+# Core dependencies for Robot Camera Detector
+opencv-python>=4.5.0
+Pillow>=9.0.0
+numpy>=1.21.0
+
+# NVIDIA NanoOWL dependencies
+# Note: nanoowl should be installed from source:
+# git clone https://github.com/NVIDIA-AI-IOT/nanoowl
+# cd nanoowl && python3 setup.py develop --user
+#
+# Additional dependencies that nanoowl requires:
+# - torch (PyTorch for Jetson)
+# - torchvision
+# - transformers
+# - tensorrt
+# - torch2trt
+
+# Optional: for advanced features
+# pyyaml>=6.0  # If using YAML config files in future
+

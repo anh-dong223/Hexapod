@@ -1,0 +1,21 @@
+{
+  "model_name": "google/owlvit-base-patch32",
+  "image_encoder_engine": "data/owl_image_encoder_patch32.engine",
+  "camera_index": 0,
+  "detection_texts": [
+    "person",
+    "box",
+    "forklift",
+    "robot",
+    "object"
+  ],
+  "threshold": 0.1,
+  "save_output": false,
+  "output_dir": "output",
+  "camera": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  }
+}
+
